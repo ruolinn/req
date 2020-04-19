@@ -22,6 +22,7 @@ type Resp struct {
 	*multipartHelper
 	reqBody          []byte
 	respBody         []byte
+	respMap          map[string]interface{}
 	downloadProgress DownloadProgress
 	err              error // delayed error
 }
